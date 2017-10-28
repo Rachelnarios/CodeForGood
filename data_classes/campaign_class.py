@@ -1,4 +1,3 @@
-from user_class import User
 from NPO_class import NPO
 
 class Campaign:
