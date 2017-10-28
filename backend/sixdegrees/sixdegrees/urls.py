@@ -14,6 +14,7 @@ urlpatterns = [
 #            form_class=UserCreationForm,
 #            success_url='/'
 #    )),
+url(r'^oauth/', include('social_django.urls', namespace='social')),
     url(r'^accounts/register/', CreateView.as_view(template_name='classes/UI/Webpage/examples/signup-page.html', form_class=UserCreationForm, success_url='/'), name = 'signup-page'),
     url(r'^admin/', admin.site.urls),
     url(r'^', include('classes.urls'), name = 'homepage'),
