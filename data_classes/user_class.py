@@ -21,5 +21,8 @@ class User:
         self.children[self.size] = new_user
         self.campaign.add_user(user_name, self, str(self.size))
         self.size += 1
-        
+     
+    #overload [] operator
+    def __getitem__(self, index):
+        return self.children[index]
                  

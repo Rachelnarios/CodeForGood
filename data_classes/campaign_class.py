@@ -20,3 +20,15 @@ class Campaign:
             parent_size = self.users[parent.get_username()]
             self.users[username] = parent_size + size
     
+    def find_user(self, username):
+        user_location = self.users[username]
+        user = None
+        for char in user_location:
+            index = int(char)
+            if user == None:
+                user = self.catalyst[index]
+            else:
+                user = user[index]
+        return user
+            
+        
