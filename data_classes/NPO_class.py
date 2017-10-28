@@ -1,6 +1,7 @@
 from campaign_class import Campaign
 
 class NPO:
+
     def __init__(self, name, description):
         self.NPO_name = name
         self.campaigns = []
@@ -8,6 +9,11 @@ class NPO:
 
     def get_description(self):
         return self.description
+
+    def delete(self, campaign):
+        self.campaigns.remove(campaign)
+
+    
 
     
         
