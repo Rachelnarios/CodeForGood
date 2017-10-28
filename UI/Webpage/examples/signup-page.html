@@ -20,7 +20,9 @@
     <link href="../assets/css/material-kit.css" rel="stylesheet"/>
 
 </head>
-
+{% block content %}
+	 <a href="{% url 'social:begin' 'facebook' %}">	<i class="fa fa-facebook-square"></i></a>
+{% endblock %}
 <body class="signup-page">
 	<nav class="navbar navbar-transparent navbar-absolute">
     	<div class="container">
