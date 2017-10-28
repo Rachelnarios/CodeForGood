@@ -72,7 +72,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                 'social_django.context_processors.backends',  # <--
+                'social_django.context_processors.backends',  # <--
                 'social_django.context_processors.login_redirect', # <--
             ],
         },
@@ -145,4 +145,4 @@ AUTH_PROFILE_MODULE = 'sixdegrees.UserProfile'
 AUTH_PROFILE_MODULE = 'sixdegrees.NPOProfile'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'index'

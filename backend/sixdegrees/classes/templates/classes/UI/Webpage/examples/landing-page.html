@@ -21,8 +21,8 @@
 
 </head>
 {% block content %}
- <a href="{% url 'social:begin' 'facebook' %}">Login with Facebook</a>
- {% endblock %}
+	 <a href="{% url 'social:begin' 'facebook' %}">	<i class="fa fa-facebook-square"></i></a>
+{% endblock %}
 <body class="landing-page">
     <nav class="navbar navbar-transparent navbar-absolute">
     	<div class="container">
@@ -42,6 +42,7 @@
     				<li>
     					<a href="{% url 'userlogin' %}" />
     						Log In
+								{{ request.user.username }}
     					</a>
     				</li>
 					<li>
