@@ -19,7 +19,7 @@ class User:
     def add_user(self, user_name, user_username, user_password):
         new_user = User(user_name, user_username, user_password)
         self.children[self.size] = new_user
-        self.campaign.add_user(self.username, self.parent, str(self.size))
+        self.campaign.add_user(user_name, self, str(self.size))
         self.size += 1
         
                  
