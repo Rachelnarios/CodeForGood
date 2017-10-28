@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-<<<<<<< HEAD
 counter = 0
 
 class UserProfile(models.Model):
@@ -27,11 +26,3 @@ class Campaign(models.Model):
 	user_4 = models.CharField(max_length=200, null = True, blank = True)
 	user_5 = models.CharField(max_length=200, null = True, blank = True)
 	user_6 = models.CharField(max_length=200, null = True, blank = True)
-=======
-class UserProfile(models.Model):
-    username = models.CharField(max_length = 128)
-    password = models.CharField(max_length = 128)
-    first_name = models.CharField(max_length = 128)
-    last_name = models.CharField(max_length = 128)
-    email = models.CharField(max_length = 128)
->>>>>>> 336355094e0f0ac0482263edf6da621faa512ab9
