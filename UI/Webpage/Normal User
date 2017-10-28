@@ -160,16 +160,24 @@
                                      <a href="#">
                                     <img class="avatar border-gray" src="assets/img/faces/face-3.jpg" alt="..."/>
 
-                                      <h4 class="title">John Smith's Non Profit<br />
+                                      <h4 class="title">John Smith User<br />
                                          <small>John3Smith</small>
                                       </h4>
                                     </a>
                                 </div>
-                                <p class="description text-center" > Active Campains: 32 <br>
-                                                    Pending Campaigns: 10 <br>
+                                <p class="description text-center" > Invites Sent: 322 <br>
+                                                    Invites Accepted: 45 <br> Levels deep: 4 <br>
 
                                 </p>
                             </div>
+														<div><h4 class="title">Level 3 <br />
+															 <small>5 more actions needed to level up</small>
+														</h4>
+															<div class="progress">
+	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+	<span class="sr-only">80% Complete</span>
+	</div>
+</div></div>
                             <hr>
                             <div class="text-center">
                                 <button href="#" class="btn btn-simple"><i class="fa fa-facebook-square"></i></button>
@@ -208,5 +216,21 @@
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+
+					demo.initChartist();
+
+					$.notify({
+							icon: 'pe-7s-gift',
+							message: "Congrats A New Location For A Prize Has Been Discovered!"
+
+						},{
+								type: 'success',
+								timer: 4000
+						});
+
+			});
+	</script>
 
 </html>
